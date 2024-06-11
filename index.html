@@ -4,8 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel_agent</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
-    <p>Hello Word!</p>
+  <body class="page">
+    <!-- Шапка сайта Header-->
+    <header class="header">
+      <div class="container header-container">
+        <a class="logo header-logo" lang="en" href="./index.html" aria-label="Логотип сайта"
+          >AviTravel<span class="logo__accent-dark">Network</span>
+          <!-- <p class="nav__link">Start Your Journey Today</p> -->
+        </a>
+        <!-- <img src="./images/Avitravelnetwork_logo.png" alt="logo" width="160" height="160" /> -->
+
+        <!-- Мобильное меню Mobile-menu -->
+        <!-- <button
+          class="nav-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="nav-menu__icon"
+            width="24"
+            height="24"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="nav-menu__icon-cross"
+              href="./images/icons.svg/symbol-defs-opt.svg#icon-close-black"
+            ></use>
+            <use
+              class="nav-menu__icon-menu"
+              href="./images/icons.svg/icon-nav-menu.svg#icon-nav-menu"
+            ></use>
+          </svg>
+        </button> -->
+
+        <div class="menu-container menu-container__box" id="menu-container" data-menu>
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a class="nav__link nav__link--current link" href="./index.html">About us</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link link" href="./index.html">Benefits</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="./index.html">How to Start</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="./index.html">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="hero__btn-box">
+          <button class="hero__btn btn hero__btn-accent" type="button" data-modal-open>
+            Get Started
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Секция Герой Hero -->
+
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__container-box">
+            <h1 class="hero__title">
+              How to Become <br />
+              a Travel Agent
+            </h1>
+            <p class="hero__paragraph">
+              Watch our FREE online presentation <br />
+              to learn all about opportunity
+            </p>
+
+            <button class="hero__btn btn" type="button" data-modal-open>Заказать услугу</button>
+            <!-- <img class="hero__img-bcg" src="./images/Vector.png" alt="" width="449" height="412" /> -->
+          </div>
+          <div class="hero__img">
+            <img src="./images/Picture.png" alt="team photo" />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

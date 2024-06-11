@@ -1,0 +1,52 @@
+/* 
+Portfolio
+============================
+| Filters section / Фильтры
+============================
+*/
+
+.filters__list {
+  @include display-flex(center);
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    @include display-flex(center, center);
+    flex-wrap: nowrap;
+  }
+}
+
+.filters__item {
+  margin-right: 8px;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+  &:hover,
+  &:focus {
+    box-shadow: var(--accent-bcg-shadow);
+  }
+}
+
+.filters__btn {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  @include fonts(16px, 1.6);
+  text-align: center;
+  color: var(--title-txt-cl);
+  background-color: var(--secondary-bg-cl);
+  transition: box-shadow var(--main-animation), color var(--main-animation),
+    background-color var(----main-animation);
+
+  &:hover,
+  &:focus {
+    color: var(--main-white-cl);
+    background-color: var(--accent-cl);
+  }
+
+  &--current {
+    color: var(--main-white-cl);
+    background-color: var(--accent-cl);
+  }
+}

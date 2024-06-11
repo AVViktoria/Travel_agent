@@ -1,0 +1,41 @@
+body {
+  font-family: var(--main-font);
+  @include fonts(14px, 1.4, 0.03em);
+  color: var(--main-txt-cl);
+  background-color: var(--main-white-cl);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  @include fonts(28px, 0.86);
+  font-weight: 700;
+  line-height: 33px;
+  color: var(--title-txt-cl);
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(36px, 1.16);
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
+}
+
+.section-subtitle {
+  margin-bottom: 10px;
+  color: var(--title-txt-cl);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}

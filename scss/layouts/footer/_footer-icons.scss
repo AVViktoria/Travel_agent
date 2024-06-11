@@ -1,0 +1,51 @@
+/* 
+============================
+| Join section / Присоединяйтесь
+============================
+*/
+
+.socials {
+  padding: 0;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
+}
+
+.socials__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: normal;
+  @include fonts(14px, 1.14);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-white-cl);
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.socials__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 0;
+  margin-right: 10px;
+}
+
+.socials__item:not(:last-child) {
+  padding-left: 0;
+}
+
+.socials__link {
+  background-color: var(--accent-bg-cl);
+}
+
+.socials__picture {
+  fill: var(--main-white-cl);
+}

@@ -1,0 +1,29 @@
+.btn {
+  font-family: var(--main-font);
+  cursor: pointer;
+  @include display-flex(center, center);
+
+  padding: 10px 32px;
+  border-radius: 15px;
+
+  font-weight: 600;
+  @include fonts(16px, 1.9);
+  background-color: transparent;
+  background-color: var(--accent-cl);
+  color: var(--main-white-cl);
+  border: transparent;
+  transition: background-color var(--main-animation);
+}
+
+.hero__btn-box {
+  display: flex;
+  margin-left: auto;
+}
+
+.hero__btn-box .hero__btn-accent {
+  background-color: #120d26;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 400;
+}

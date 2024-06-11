@@ -1,0 +1,52 @@
+/*
+============================
+| Address section / Адрес секция
+============================
+*/
+
+.address__container {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.address__logo {
+  margin-bottom: 20px;
+  padding: 0;
+  margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.address__list {
+  display: block;
+}
+
+.address__item {
+  &:first-child {
+    margin-bottom: 9px;
+  }
+  &:last-child {
+    margin-top: 6px;
+  }
+}
+
+.address__link {
+  color: var(--main-white-cl);
+  font-style: normal;
+  line-height: 1.7;
+
+  &--accent {
+    color: var(--accent-cl-white);
+  }
+}

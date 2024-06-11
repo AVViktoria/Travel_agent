@@ -1,0 +1,22 @@
+/*
+============================
+| Header section / Шапка сайта
+============================
+*/
+
+.header {
+  position: relative;
+  border-bottom: 1px solid #ececec;
+  background-color: var(--main-white-cl);
+}
+
+.header-container {
+  @include display-flex(center);
+  margin-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.menu-container__box {
+  width: auto;
+}

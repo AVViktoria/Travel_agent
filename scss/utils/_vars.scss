@@ -1,0 +1,43 @@
+:root {
+  /* font */
+  // --main-font: Roboto, sans-serif;
+  --main-font: 'Poppins', sans-serif;
+  --secondary-font: 'Poppins', sans-serif;
+
+  /* colors */
+  --main-white-cl: #ffffff;
+  --accent-cl: #ff7058;
+  // --accent-cl: #d96a56;
+  --second-accent-cl: #d96a56;
+
+  /* fills borders*/
+  --main-fill-light: #afb1b8;
+  --accent-fill-cl: rgba(255, 255, 255, 0.3);
+  --second-border-cl: rgba(0, 0, 0, 0.1);
+  --main-border-cl: rgba(33, 33, 33, 0.2);
+  --bg-border-cl: #eeeeee;
+
+  /* text colors */
+  --main-txt-cl: #757575;
+  --title-txt-cl: #8c8d91;
+  --accent-cl-white: rgba(255, 255, 255, 0.6);
+  --accent-cl-dark: #120d26;
+
+  /* background colors */
+  --main-bg-cl: #e5e5e5;
+  --secondary-bg-cl: #f5f4fa;
+  --dark-bg-cl: #2f303a;
+  --backdrop-bg-cl: rgba(0, 0, 0, 0.2);
+  --input-bg-cl: rgba(117, 117, 117, 0.5);
+  --accent-bg-cl: rgba(255, 255, 255, 0.1);
+  --group-bg-cl: rgba(47, 48, 58, 0.8);
+  --action-bg-cl: rgba(33, 150, 243, 0.9);
+
+  /* shadows */
+  --main-bcg-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --accent-bcg-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* Animation */
+  --main-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

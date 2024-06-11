@@ -1,0 +1,87 @@
+/* 
+============================
+| Subscribe section / Подпишитесь на рассылку
+============================
+*/
+
+.subscribe-form {
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include display-flex(flex-end);
+    width: 570px;
+  }
+}
+
+.subscribe-form__label {
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+.subscribe-form__title {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-style: normal;
+  @include fonts(14px, 1.14);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-white-cl);
+}
+
+.subscribe-form__text {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+  width: 100%;
+  padding: 15px 15px 15px 16px;
+  height: 50px;
+  font-weight: 400;
+  @include fonts(16px, 1.25, 0.03em);
+  background-color: var(--dark-bg-cl);
+  color: var(--accent-cl-white);
+  border: 1px solid var(--accent-fill-cl);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: transparent;
+  cursor: pointer;
+}
+
+.subscribe-form__btn {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
+
+  &::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url('../images/icons.svg/icon-send.svg');
+    background-size: contain;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--second-accent-cl);
+  }
+}

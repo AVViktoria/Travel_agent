@@ -1,0 +1,30 @@
+/*
+============================
+| Logo / Логотип компании
+============================
+*/
+
+.logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: var(--accent-cl);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  @include fonts(26px, 0.84);
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: var(--second-accent-cl);
+  }
+  &__accent-dark {
+    color: var(--accent-cl-dark);
+  }
+
+  &__accent-white {
+    color: var(--main-white-cl);
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+  }
+}
