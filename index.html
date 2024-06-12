@@ -28,35 +28,7 @@
       <div class="container header-container">
         <a class="logo header-logo" lang="en" href="./index.html" aria-label="Логотип сайта"
           >AviTravel<span class="logo__accent-dark">Network</span>
-          <!-- <p class="nav__link">Start Your Journey Today</p> -->
         </a>
-        <!-- <img src="./images/Avitravelnetwork_logo.png" alt="logo" width="160" height="160" /> -->
-
-        <!-- Мобильное меню Mobile-menu -->
-        <!-- <button
-          class="nav-menu"
-          type="button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg
-            class="nav-menu__icon"
-            width="24"
-            height="24"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use
-              class="nav-menu__icon-cross"
-              href="./images/icons.svg/symbol-defs-opt.svg#icon-close-black"
-            ></use>
-            <use
-              class="nav-menu__icon-menu"
-              href="./images/icons.svg/icon-nav-menu.svg#icon-nav-menu"
-            ></use>
-          </svg>
-        </button> -->
-
         <div class="menu-container menu-container__box" id="menu-container" data-menu>
           <nav class="nav">
             <ul class="nav__list list">
@@ -86,7 +58,6 @@
 
     <main>
       <!-- Секция Герой Hero -->
-
       <section class="hero">
         <div class="container hero__container">
           <div class="hero__container-box">
@@ -96,15 +67,88 @@
             </h1>
             <p class="hero__paragraph">
               Watch our FREE online presentation <br />
-              to learn all about opportunity
+              to learn all steps opportunity
             </p>
-
             <button class="hero__btn btn" type="button" data-modal-open>Заказать услугу</button>
-            <!-- <img class="hero__img-bcg" src="./images/Vector.png" alt="" width="449" height="412" /> -->
           </div>
+          <!-- <img class="img-root" src="./images/Vector.png" alt="" /> -->
           <div class="hero__img">
             <img src="./images/Picture.png" alt="team photo" />
           </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="benefits section">
+        <div class="benefits__title-box">
+          <h2 class="section-title benefits__title">Benefits</h2>
+          <p class="benefits__text">Your New Travel Agency includes everything you need</p>
+        </div>
+        <div class="our-friends__slider-wrapper">
+          <button id="arrow_left" class="slider__btn slider__arrow_left">&larr;</button>
+
+          <div class="slider__wrapper_inner">
+            <div class="slider__carousel" id="carousel">
+              <div class="slider__list" id="slider__list_left"></div>
+              <div class="slider__list" id="slider__list_center"></div>
+              <div class="slider__list" id="slider__list_right"></div>
+            </div>
+          </div>
+          <button id="arrow_right" class="slider__btn slider__arrow_right">&rarr;</button>
+        </div>
+      </section>
+
+      <section class="steps section">
+        <div class="steps__title-box">
+          <h2 class="section-title steps__title">How to Start?</h2>
+          <p class="steps__text">Start your Dream Travel Business in just THREE steps</p>
+        </div>
+
+        <div class="container">
+          <ul class="steps__list list">
+            <li class="steps__item">
+              <div class="steps__icon-group">
+                <svg class="steps__icon">
+                  <use href="./images/number-one.svg#number-one"></use>
+                </svg>
+              </div>
+              <div class="steps__text-box">
+                <h3 class="section-subtitle steps__subtitle">Fill Out the Form</h3>
+                <p class="steps__text steps__text-accent">
+                  Submit your contact information below and get connected with an AviTravel
+                  Specialist.
+                </p>
+              </div>
+            </li>
+            <li class="steps__item">
+              <div class="steps__icon-group">
+                <svg class="steps__icon">
+                  <use href="./images/number-two.svg#number-two"></use>
+                </svg>
+              </div>
+              <div class="steps__text-box">
+                <h3 class="section-subtitle steps__subtitle">Join the Free Training</h3>
+                <p class="steps__text steps__text-accent">
+                  Become an Independent Agent, connect with all suppliers, and complete online
+                  training.
+                </p>
+              </div>
+            </li>
+            <li class="steps__item">
+              <div class="steps__icon-group">
+                <svg class="steps__icon">
+                  <use href="./images/number-three.svg#number-three"></use>
+                </svg>
+              </div>
+              <div class="steps__text-box">
+                <h3 class="section-subtitle steps__subtitle">Start Selling</h3>
+                <p class="steps__text steps__text-accent">
+                  Go ahead, make travel dreams come true! We'll be here to help you from day one to
+                  day 365 and beyond!.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
