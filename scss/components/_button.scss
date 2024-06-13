@@ -6,7 +6,7 @@
   padding: 10px 32px;
   border-radius: 15px;
 
-  font-weight: 600;
+  font-weight: 400;
   @include fonts(16px, 1.9);
   background-color: transparent;
   background-color: var(--accent-cl);
@@ -20,10 +20,10 @@
   margin-left: auto;
 }
 
-.hero__btn-box .hero__btn-accent {
+.hero__btn-accent {
   background-color: #120d26;
   color: #ffffff;
-  padding: 10px 24px;
-  border-radius: 6px;
-  font-weight: 400;
+  padding: 10px 25px;
+  // border-radius: 15px;
+  // font-weight: 400;
 }
