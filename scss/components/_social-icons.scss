@@ -14,42 +14,45 @@
 //   margin-right: 10px;
 
 //   &:last-child {
-//   margin-right: 0;
-// }
+//     margin-right: 0;
+//   }
 //   &:not(:last-child) {
-//   margin-right: 10px;
-// }
+//     margin-right: 10px;
+//   }
 // }
 
 // .social-icons__link {
-//   @include display-flex(center, center);
+//   //   @include display-flex(center, center);
 //   width: 44px;
 //   height: 44px;
-//   border-radius: 50%;
+// border-radius: 50%;
 //   transition: background-color var(--main-animation);
 //   background-color: var(--main-white-cl);
 
 //   &:hover,
 //   &:focus {
-//   background-color: var(--accent-cl);
-// }}
+//     background-color: var(--accent-cl);
+//   }
+// }
 
-//   .social-icons__picture--accent {
+// .social-icons__picture--accent {
 //   transition: fill var(--main-animation);
 
 //   .social-icons__link:hover & {
-//   fill: var(--main-white-cl);
-// }}
+//     fill: var(--main-white-cl);
+//   }
+// }
 
 // .social-icons__picture {
 //   fill: var(--main-fill-light);
 //   justify-content: center;
 //   align-items: center;
-//   width: 20px;
-//   height: 20px;
+//   // width: 20px;
+//   // height: 20px;
 //   transition: fill var(--main-animation);
 
 //   &:hover,
 //   &:focus {
-//   fill: var(--main-white-cl);
-// }}
+//     fill: var(--main-white-cl);
+//   }
+// }

@@ -11,9 +11,10 @@
 }
 
 .footer__holder {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  // align-items: center;
+  // margin-left: auto;
+  // margin-right: auto;
+  // text-align: center;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -26,5 +27,77 @@
     @include display-flex(baseline);
     flex-wrap: nowrap;
     justify-content: center;
+  }
+}
+/*
+============================
+| Address section / Адрес секция
+============================
+*/
+
+.address__container {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.address__logo {
+  margin-bottom: 20px;
+  padding: 0;
+  margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+/* 
+============================
+| Join section / Присоединяйтесь
+============================
+*/
+
+.social-icons__list {
+  // margin-top: 0;
+  // margin-bottom: 0;
+  // padding-right: 0;
+  // margin-right: 10px;
+
+  @include display-flex(center);
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.social-icons__item {
+  margin-right: 10px;
+
+  // background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+}
+.social-icons__link {
+  @include display-flex(center, center);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--title-txt-cl);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--main-animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
   }
 }
