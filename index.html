@@ -21,6 +21,11 @@
     />
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
+
+    <!-- Swiper Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body class="page">
     <!-- Шапка сайта Header-->
@@ -85,31 +90,28 @@
       <!-- Benefits Section -->
       <!-- WRAPPER -->
       <section class="benefits section">
-        <div class="benefits__title-box">
-          <h2 class="section-title benefits__title">Benefits</h2>
-          <p class="benefits__text">Your New Travel Agency includes everything you need</p>
-        </div>
+        <div class="container benefits__container">
+          <div class="benefits__title-box">
+            <h2 class="section-title benefits__title">Benefits</h2>
+            <p class="benefits__text">Your New Travel Agency includes everything you need</p>
 
-        <!-- WRAPPER /////////////////////////////////////////-->
-        <div class="our-friends__slider-wrapper">
-          <button id="arrow_left" class="slider__btn slider__arrow_left">&larr;</button>
-          <!-- WRAPPER -->
-
-          <div class="slider__wrapper_inner">
-            <div class="slider__carousel" id="carousel">
-              <div class="slider__list" id="slider__list_left"></div>
-              <div class="slider__list" id="slider__list_center"></div>
-              <div class="slider__list" id="slider__list_right"></div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- <img src="./images/Picture.png" /> -->
+                </div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
-
-          <!-- WRAPPER /////////////////////////////////////////-->
-          <button id="arrow_right" class="slider__btn slider__arrow_right">&rarr;</button>
         </div>
       </section>
-      <!-- WRAPPER -->
-      <!-- Gallery -->
 
+      <!-- Gallery -->
       <section class="gallery section">
         <div class="gallery__title-box">
           <h2 class="section-title gallery__title steps__title">Our Team</h2>
@@ -346,12 +348,13 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer__holder">
+      <div class="footer__holder container">
         <div class="address__container">
           <a class="logo address__logo" lang="en" href="./index.html" aria-label="Логотип сайта"
             >AviTravel<span class="address__logo-text logo__accent-white">Network</span>
           </a>
-          <div class="socials social-icons">
+          <p class="address__text">Start your journey today!</p>
+          <div class="social-icons">
             <!-- <p class="socials__title social-icons__title"><b>Присоединяйтесь</b></p> -->
             <ul class="social-icons__list">
               <li class="social-icons__item">
@@ -384,9 +387,48 @@
           </div>
         </div>
 
+        <!-- useful links     -->
+        <div class="useful__box">
+          <h3 class="useful__title">Useful links</h3>
+          <ul class="useful__list list">
+            <li class="useful__item">
+              <a href="" class="useful__link link">
+                <svg class="useful__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-insta"></use>
+                </svg>
+                About us</a
+              >
+            </li>
+            <li class="useful__item">
+              <a href="" class="useful__link link">
+                <svg class="useful__icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-insta"></use>
+                </svg>
+                Benefits
+              </a>
+            </li>
+            <li class="useful__item">
+              <a href="" class="useful__link link">
+                <svg class="useful__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-insta"></use>
+                </svg>
+                How to start</a
+              >
+            </li>
+            <li class="useful__item">
+              <a href="" class="useful__link link">
+                <svg class="useful__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-insta"></use>
+                </svg>
+                Contacts</a
+              >
+            </li>
+          </ul>
+        </div>
+
         <form class="subscribe-form">
+          <h3 class="useful__title">Get in touch</h3>
           <label class="subscribe-form__label">
-            <span class="subscribe-form__title">Подпишитесь на рассылку</span>
             <input
               class="subscribe-form__text text"
               type="text"
@@ -394,9 +436,24 @@
               placeholder="E-mail"
             />
           </label>
-          <button class="subscribe-form__btn btn" type="submit">Подписаться</button>
+          <button class="hero__btn subscribe-form__btn btn" type="submit">Sign up</button>
         </form>
       </div>
     </footer>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
+
+<!-- <ul class="benefits__list list">
+            <li class="benefits__item">
+              <div class="benefits__icon-group">
+                <svg class="benefits__icon">
+                  <use href="./images/symbol-defs-opt-1.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="steps__subtitle benefits__title">Work From Home</h3>
+              <p class="steps__text benefits__describe-text">
+                We offer a home-based travel business that lets you work from anywhere.
+              </p>
+            </li>
+          </ul> -->

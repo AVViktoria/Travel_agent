@@ -5,7 +5,9 @@
 */
 
 .subscribe-form {
-  text-align: center;
+  // text-align: center;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (max-width: 768px) {
     padding-right: 15px;
@@ -24,7 +26,7 @@
 
 .subscribe-form__label {
   @media screen and (min-width: 1200px) {
-    margin-right: 12px;
+    // margin-right: 12px;
     margin-bottom: 0;
     text-align: left;
   }
@@ -60,28 +62,39 @@
   border-radius: 4px;
   outline: transparent;
   cursor: pointer;
+  margin-bottom: 20px;
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 112, 88, 0.04);
+  }
 }
 
 .subscribe-form__btn {
   margin-top: 20px;
+  padding: 10px 52px;
   margin-right: auto;
   margin-left: auto;
+  background-color: var(--title-txt-cl);
 
   @media screen and (min-width: 1200px) {
     margin: 0;
   }
-
-  &::after {
-    content: '';
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-    background-image: url('../images/icons.svg/icon-send.svg');
-    background-size: contain;
-  }
-
   &:hover,
   &:focus {
-    background-color: var(--second-accent-cl);
+    background-color: var(--accent-cl);
   }
 }
+//   &::after {
+//     content: '';
+//     width: 24px;
+//     height: 24px;
+//     margin-left: 10px;
+//     background-image: url('../images/icons.svg/icon-send.svg');
+//     background-size: contain;
+//   }
+
+//   &:hover,
+//   &:focus {
+//     background-color: var(--second-accent-cl);
+//   }
+// }

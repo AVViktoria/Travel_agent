@@ -1,0 +1,126 @@
+/*
+============================
+| Benefits section
+============================
+*/
+
+.benefits__title-box {
+  background-color: rgba(255, 112, 88, 0.04);
+}
+
+.benefits__list {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include display-flex(center);
+    margin-left: auto;
+    flex-wrap: nowrap;
+  }
+}
+.benefits__item {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+    &:last-child {
+      margin-left: 30px;
+    }
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    width: 270px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}
+
+.benefits__icon-group {
+  @include display-flex(center, center);
+  margin-bottom: 30px;
+  border-radius: 50%;
+  height: 120px;
+
+  // background-color: var(--secondary-bg-cl);
+}
+
+.benefits__icon {
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+  border-radius: 20%;
+  box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.2);
+  }
+}
+
+.benefits__text {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+  font-family: var(--main-font);
+  // text-align: left;
+  // letter-spacing: 0.03em;
+}
+.benefits__describe-text {
+  font-weight: 600;
+}
+
+// swiper
+
+// .swiper {
+//   width: 600px;
+//   height: 300px;
+// }
+// .benefits__container {
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+// }
+// .swiper-container {
+//   position: absolute;
+//   width: 600px;
+//   height: 600px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+// .swiper-slide img {
+//   width: 350px;
+//   height: auto;
+// }
+// .swiper-slide {
+//   text-align: center;
+//   font-size: 18px;
+//   background: #fff;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// .img-slide {
+//   display: flex;
+//   width: 350px;
+//   height: auto;
+// }
