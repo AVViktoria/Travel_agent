@@ -27,31 +27,39 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
   </head>
-  <body class="page">
+  <body class="page" onload="window.scrollTo(0,0);">
     <!-- Шапка сайта Header-->
     <header class="header">
       <div class="container header-container">
-        <a class="logo header-logo" lang="en" href="./index.html" aria-label="Логотип сайта"
+        <a class="logo header-logo" lang="en" href="#" aria-label="Логотип сайта"
           >AviTravel<span class="logo__accent-dark">Network</span>
         </a>
-        <div class="menu-container menu-container__box" id="menu-container" data-menu>
+        <div class="menu-container menu-container__box">
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__item">
-                <a class="nav__link nav__link--current link" href="./index.html">About us</a>
+                <a class="nav__link nav__link--current link menu__link _active" href="./index.html"
+                  >About us</a
+                >
               </li>
 
               <li class="nav__item">
-                <a class="nav__link nav__link link" href="./index.html">Benefits</a>
+                <a class="nav__link nav__link link menu__link" href="./index.html#benefitsSection"
+                  >Benefits</a
+                >
               </li>
               <li class="nav__item">
-                <a class="nav__link link" href="./index.html">Our Team</a>
+                <a class="nav__link link menu__link" href="./index.html#ourteamsection">Our Team</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link link" href="./index.html">How to Start</a>
+                <a class="nav__link link menu__link" href="./index.html#howtobecomesection"
+                  >How to Start</a
+                >
               </li>
               <li class="nav__item">
-                <a class="nav__link link" href="./index.html">Contacts</a>
+                <a class="nav__link link menu__link" href="./index.html#contactssection"
+                  >Contacts</a
+                >
               </li>
             </ul>
           </nav>
@@ -67,7 +75,7 @@
 
     <main>
       <!-- Секция Герой Hero -->
-      <section class="hero">
+      <section class="hero" data-goto=".home">
         <div class="container hero__container">
           <div class="hero__container-box">
             <h1 class="hero__title">
@@ -89,28 +97,97 @@
 
       <!-- Benefits Section -->
       <!-- WRAPPER -->
-      <section class="benefits section">
+      <section class="benefits section" id="benefitsSection">
         <div class="container benefits__container">
           <div class="benefits__title-box">
             <h2 class="section-title benefits__title">Benefits</h2>
             <p class="benefits__text">Your New Travel Agency includes everything you need</p>
-
-            <!-- <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-              </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>-->
           </div>
+
+          <ul class="benefits__list list">
+            <li class="benefits__item">
+              <div class="benefits__icon-group">
+                <img class="benefits__icon" src="./images/Picture.png" alt="" />
+              </div>
+              <h3 class="steps__subtitle benefits__title">Work from home</h3>
+              <p class="steps__text benefits__describe-text">
+                We offer a home-based travel business that lets you work from anywhere.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__icon-group">
+                <img class="benefits__icon" src="./images/Picture.png" alt="" />
+              </div>
+              <h3 class="steps__subtitle benefits__title">Free education</h3>
+              <p class="steps__text benefits__describe-text">
+                We offer a home-based travel business that lets you work from anywhere.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__icon-group">
+                <img class="benefits__icon" src="./images/Picture.png" alt="" />
+              </div>
+              <h3 class="steps__subtitle benefits__title">Support 24/7</h3>
+              <p class="steps__text benefits__describe-text">
+                We offer a home-based travel business that lets you work from anywhere.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__icon-group">
+                <img class="benefits__icon" src="./images/Picture.png" alt="" />
+              </div>
+              <h3 class="steps__subtitle benefits__title">Your own website</h3>
+              <p class="steps__text benefits__describe-text">
+                We offer a home-based travel business that lets you work from anywhere.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__icon-group">
+                <img class="benefits__icon" src="./images/Picture.png" alt="" />
+              </div>
+              <h3 class="steps__subtitle benefits__title">Personal coach</h3>
+              <p class="steps__text benefits__describe-text">
+                We offer a home-based travel business that lets you work from anywhere.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__icon-group">
+                <img class="benefits__icon" src="./images/Picture.png" alt="" />
+                <!-- <svg class="benefits__icon">
+                  <use href="./images/symbol-defs-opt-1.svg#icon-antenna"></use>
+                </svg> -->
+              </div>
+              <h3 class="steps__subtitle benefits__title">Powerful suppliers</h3>
+              <p class="steps__text benefits__describe-text">
+                We offer a home-based travel business that lets you work from anywhere.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__icon-group">
+                <img class="benefits__icon" src="./images/Picture.png" alt="" />
+              </div>
+              <h3 class="steps__subtitle benefits__title">Passive income</h3>
+              <p class="steps__text benefits__describe-text">
+                We offer a home-based travel business that lets you work from anywhere.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__icon-group">
+                <img class="benefits__icon" src="./images/Picture.png" alt="" />
+              </div>
+              <h3 class="steps__subtitle benefits__title benefits__title-accent">
+                Marketing resources
+              </h3>
+              <p class="steps__text benefits__describe-text">
+                We offer a home-based travel business that lets you work from anywhere.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
       <!-- Gallery -->
-      <section class="gallery section">
+      <section class="gallery section" id="ourteamsection">
         <div class="gallery__title-box">
           <h2 class="section-title gallery__title steps__title">Our Team</h2>
           <p class="container gallery__text">
@@ -249,7 +326,7 @@
       </section>
 
       <!-- Steps section -->
-      <section class="steps section">
+      <section class="steps section" id="howtobecomesection">
         <div class="steps__title-box">
           <h2 class="section-title steps__title">How to Start?</h2>
           <p class="steps__text">Start your Dream Travel Business in just THREE steps</p>
@@ -304,7 +381,7 @@
       </section>
 
       <!-- Contacts -->
-      <section class="contacts section">
+      <section class="contacts section" id="contactssection">
         <div class="contacts__title-box">
           <h2 class="section-title contacts__title">Contacts</h2>
           <p class="contacts__text">
@@ -358,7 +435,7 @@
               <li class="social-icons__item">
                 <a
                   class="social-icons__link"
-                  href=""
+                  href="https://www.instagram.com/avilova_travel/?locale=id"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Фейсбук иконка"
@@ -371,7 +448,7 @@
               <li class="social-icons__item">
                 <a
                   class="social-icons__link"
-                  href=""
+                  href="https://www.facebook.com/viktoriya.avilova/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Инстаграм иконка"
@@ -390,15 +467,15 @@
           <h3 class="useful__title">Useful links</h3>
           <ul class="useful__list list">
             <li class="useful__item">
-              <a href="" class="useful__link link">
+              <a href="./index.html#ourteamsection" class="useful__link link">
                 <svg class="useful__icon" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-insta"></use>
                 </svg>
-                About us</a
+                Our team</a
               >
             </li>
             <li class="useful__item">
-              <a href="" class="useful__link link">
+              <a href="./index.html#benefitsSection" class="useful__link link">
                 <svg class="useful__icon" width="16" height="16">
                   <use href="./images/symbol-defs.svg#icon-insta"></use>
                 </svg>
@@ -406,7 +483,7 @@
               </a>
             </li>
             <li class="useful__item">
-              <a href="" class="useful__link link">
+              <a href="./index.html#howtobecomesection" class="useful__link link">
                 <svg class="useful__icon" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-insta"></use>
                 </svg>
@@ -414,7 +491,7 @@
               >
             </li>
             <li class="useful__item">
-              <a href="" class="useful__link link">
+              <a href="./index.html#contactssection" class="useful__link link">
                 <svg class="useful__icon" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-insta"></use>
                 </svg>
@@ -438,20 +515,7 @@
         </form>
       </div>
     </footer>
-    <!-- <script src="./js/slider.js"></script> -->
+    <!-- js scripts -->
+    <script type="module" src="./js/slider.js"></script>
   </body>
 </html>
-
-<!-- <ul class="benefits__list list">
-            <li class="benefits__item">
-              <div class="benefits__icon-group">
-                <svg class="benefits__icon">
-                  <use href="./images/symbol-defs-opt-1.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <h3 class="steps__subtitle benefits__title">Work From Home</h3>
-              <p class="steps__text benefits__describe-text">
-                We offer a home-based travel business that lets you work from anywhere.
-              </p>
-            </li>
-          </ul> -->
