@@ -38,13 +38,19 @@
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__item">
-                <a class="nav__link nav__link--current link menu__link _active" href="./index.html"
+                <a
+                  class="nav__link nav__link--current link menu__link _active"
+                  href="./index.html#herosection"
+                  >Hero</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link link menu__link" href="./index.html#aboutusection"
                   >About us</a
                 >
               </li>
-
               <li class="nav__item">
-                <a class="nav__link nav__link link menu__link" href="./index.html#benefitsSection"
+                <a class="nav__link nav__link link menu__link" href="./index.html#benefitssection"
                   >Benefits</a
                 >
               </li>
@@ -66,16 +72,14 @@
         </div>
 
         <div class="hero__btn-box">
-          <button class="hero__btn btn hero__btn-accent" type="button" data-modal-open>
-            Get Started
-          </button>
+          <button class="hero__btn btn hero__btn-accent" type="button">Get Started</button>
         </div>
       </div>
     </header>
 
     <main>
-      <!-- Секция Герой Hero -->
-      <section class="hero" data-goto=".home">
+      <!-- Hero section-->
+      <section class="hero" id="herosection">
         <div class="container hero__container">
           <div class="hero__container-box">
             <h1 class="hero__title">
@@ -88,16 +92,32 @@
             </p>
             <button class="hero__btn btn" type="button" data-modal-open>Get Presentation</button>
           </div>
-          <!-- <img class="img-root" src="./images/Vector.png" alt="" /> -->
           <div class="hero__img">
             <img src="./images/Picture.png" alt="team photo" />
           </div>
         </div>
       </section>
 
+      <!-- About Us Section -->
+      <section class="about section" id="aboutusection">
+        <div class="container about__container">
+          <div class="about__title-box">
+            <h2 class="section-title about__title">About Us</h2>
+            <p class="about__text">
+              <b class="about__text-accent-red">AviTravel</b>&nbsp;
+              <b class="about__text-accent-dark">Network</b>&nbsp;is a travel business platform that
+              lets you start your own travel franchise
+            </p>
+            <p class="about__text accent">
+              and become an IATA-certified independent travel agent, enjoying all the perks of the
+              travel industry!
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- Benefits Section -->
-      <!-- WRAPPER -->
-      <section class="benefits section" id="benefitsSection">
+      <section class="benefits section" id="benefitssection">
         <div class="container benefits__container">
           <div class="benefits__title-box">
             <h2 class="section-title benefits__title">Benefits</h2>

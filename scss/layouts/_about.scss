@@ -1,0 +1,32 @@
+.about {
+}
+.section {
+}
+.container {
+}
+.about__container {
+}
+.about .about__title-box {
+  height: auto;
+  //   padding-left: 50px;
+  //   padding-right: 50px;
+}
+.section-title {
+  padding-top: 15px;
+}
+.about__title {
+}
+.about__text.accent {
+  padding-bottom: 15px;
+}
+// .about__text-accent-box {
+//   display: flex;
+// }
+.about__text-accent-red {
+  color: var(--accent-cl);
+  font-size: 20px;
+}
+.about__text-accent-dark {
+  color: var(--accent-cl-dark);
+  font-size: 20px;
+}

@@ -5,6 +5,7 @@
 */
 
 .steps,
+.about,
 .benefits,
 .contacts {
   padding-top: 0;
@@ -14,6 +15,7 @@
   }
 }
 .steps__title-box,
+.about__title-box,
 .benefits__title-box,
 .gallery__title-box,
 .contacts__title-box {
@@ -106,6 +108,7 @@
 }
 
 .steps__text,
+.about__text,
 .gallery__text,
 .benefits__text,
 .contacts__text {
@@ -116,6 +119,7 @@
 }
 
 .steps__title,
+.about__title,
 .benefits__title,
 .contacts__title {
   color: var(--accent-cl-dark);

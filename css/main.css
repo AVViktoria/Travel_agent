@@ -279,7 +279,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .nav__item {
-    margin-right: 50px;
+    margin-right: 40px;
     margin-bottom: 0;
   }
 }
@@ -350,6 +350,28 @@ img {
 
 .menu-container__box {
   width: auto;
+}
+
+.about .about__title-box {
+  height: auto;
+}
+
+.section-title {
+  padding-top: 15px;
+}
+
+.about__text.accent {
+  padding-bottom: 15px;
+}
+
+.about__text-accent-red {
+  color: var(--accent-cl);
+  font-size: 20px;
+}
+
+.about__text-accent-dark {
+  color: var(--accent-cl-dark);
+  font-size: 20px;
 }
 
 /*
@@ -444,7 +466,8 @@ img {
 | Benefits section
 ============================
 */
-.benefits__title-box {
+.benefits__title-box,
+.about__title-box {
   background-color: rgba(255, 112, 88, 0.04);
 }
 
@@ -542,12 +565,14 @@ img {
 ============================
 */
 .steps,
+.about,
 .benefits,
 .contacts {
   padding-top: 0;
 }
 @media screen and (max-width: 1139px) {
   .steps,
+  .about,
   .benefits,
   .contacts {
     display: none;
@@ -555,6 +580,7 @@ img {
 }
 
 .steps__title-box,
+.about__title-box,
 .benefits__title-box,
 .gallery__title-box,
 .contacts__title-box {
@@ -682,6 +708,7 @@ img {
 }
 
 .steps__text,
+.about__text,
 .gallery__text,
 .benefits__text,
 .contacts__text {
@@ -694,6 +721,7 @@ img {
 }
 
 .steps__title,
+.about__title,
 .benefits__title,
 .contacts__title {
   color: var(--accent-cl-dark);
