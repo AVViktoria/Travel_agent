@@ -50,6 +50,55 @@
   margin: -1px;
 }
 
+#toTop {
+  position: fixed;
+  display: inline-block;
+  padding: 4px;
+  bottom: 40px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--title-txt-cl);
+}
+
+#toTop:hover {
+  background-color: var(--accent-cl);
+}
+
+#toTop svg {
+  position: relative;
+  top: 9px;
+  right: -1px;
+  fill: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#toTop:hover svg {
+  cursor: pointer;
+  fill: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#toTop.showScroll {
+  opacity: 1;
+  visibility: visible;
+  right: 2%;
+  cursor: pointer;
+  border-radius: 25%;
+}
+
 body {
   font-family: var(--main-font);
   font-size: 14px;
@@ -69,7 +118,7 @@ body.modal-open {
 }
 @media screen and (min-width: 1200px) {
   .section {
-    padding: 94px 0px;
+    padding: 80px 0px;
   }
 }
 
@@ -354,6 +403,7 @@ img {
 
 .about .about__title-box {
   height: auto;
+  margin-bottom: 20px;
 }
 
 .about__text-accent-red {
@@ -364,6 +414,39 @@ img {
 .about__text-accent-dark {
   color: var(--accent-cl-dark);
   font-size: 20px;
+}
+
+.aboutus__title {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.aboutus__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.aboutus__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 12px;
+  margin-bottom: 49px;
+}
+
+.aboutus__img img {
+  width: 650px;
+  height: 450px;
+  cursor: pointer;
 }
 
 /*
@@ -458,11 +541,6 @@ img {
 | Benefits section
 ============================
 */
-.benefits__title-box,
-.about__title-box {
-  background-color: rgba(255, 112, 88, 0.04);
-}
-
 .benefits__list {
   text-align: center;
   display: grid;
@@ -959,7 +1037,7 @@ img {
 }
 
 .feedback-form button {
-  width: 170px;
+  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
