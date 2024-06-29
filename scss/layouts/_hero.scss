@@ -10,8 +10,6 @@
   height: 400px;
   margin-right: auto;
   margin-left: auto;
-  // background-repeat: no-repeat;
-  // background-size: cover;
   background-position: center;
   padding: 50px 0px;
   color: #120d26;
@@ -117,6 +115,8 @@
   &:hover,
   &:focus {
     background-color: var(--second-accent-cl);
+    transition: background-color var(--timing-function);
+    scroll-behavior: smooth;
   }
 }
 // .hero__img-bcg {

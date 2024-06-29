@@ -112,6 +112,8 @@
   letter-spacing: 0.02em;
   color: var(--title-txt-cl);
   transition: color var(--main-animation);
+  transition: all 0.5s ease;
+
   @media screen and (min-width: 768px) {
     display: block;
     padding-top: 32px;
@@ -123,6 +125,7 @@
   &:hover,
   &:focus {
     color: var(--accent-cl);
+    transition: var(--timing-function);
   }
 
   &--current {

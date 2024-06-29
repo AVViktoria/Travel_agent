@@ -16,6 +16,7 @@
   &:hover,
   &:focus {
     color: var(--second-accent-cl);
+    transition: var(--timing-function);
   }
   &__accent-dark {
     color: var(--accent-cl-dark);

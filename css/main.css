@@ -33,6 +33,7 @@
   --accent-bcg-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   /* Animation */
   --main-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-function: 250ms cubic-bezier(0.38, 0.53, 0.8, 0.71);
   /* Gallery */
 }
 
@@ -252,6 +253,8 @@ img {
 }
 .logo:hover, .logo:focus {
   color: var(--second-accent-cl);
+  -webkit-transition: var(--timing-function);
+  transition: var(--timing-function);
 }
 .logo__accent-dark {
   color: var(--accent-cl-dark);
@@ -270,6 +273,52 @@ img {
 | Team Icons / Иконки Команды
 ============================
 */
+.social__icons-left-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.social__icons-left-btn a {
+  color: #000;
+  text-decoration: none;
+  font-family: roboto condensed;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 125px;
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+.social__icons-left-btn i {
+  margin-right: 5px;
+}
+
+#instagram-left-btn {
+  top: 21px;
+  right: -83px;
+  color: #000;
+}
+#instagram-left-btn:hover {
+  color: #fff;
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  right: 0;
+}
+
 .menu-container {
   position: absolute;
   display: none;
@@ -341,6 +390,8 @@ img {
   color: var(--title-txt-cl);
   -webkit-transition: color var(--main-animation);
   transition: color var(--main-animation);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 @media screen and (min-width: 768px) {
   .nav__link {
@@ -353,6 +404,8 @@ img {
 }
 .nav__link:hover, .nav__link:focus {
   color: var(--accent-cl);
+  -webkit-transition: var(--timing-function);
+  transition: var(--timing-function);
 }
 .nav__link--current {
   color: var(--accent-cl);
@@ -478,6 +531,9 @@ img {
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--second-accent-cl);
+  -webkit-transition: background-color var(--timing-function);
+  transition: background-color var(--timing-function);
+  scroll-behavior: smooth;
 }
 
 .hero img {
@@ -513,6 +569,10 @@ img {
 .aboutus__box:hover, .aboutus__box:focus {
   -webkit-box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.2);
           box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.2);
+  -webkit-transition: -webkit-box-shadow var(--timing-function);
+  transition: -webkit-box-shadow var(--timing-function);
+  transition: box-shadow var(--timing-function);
+  transition: box-shadow var(--timing-function), -webkit-box-shadow var(--timing-function);
 }
 
 .aboutus__title {
@@ -625,6 +685,10 @@ img {
 .benefits__icon:hover, .benefits__icon:focus {
   -webkit-box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.2);
           box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.2);
+  -webkit-transition: -webkit-box-shadow var(--timing-function);
+  transition: -webkit-box-shadow var(--timing-function);
+  transition: box-shadow var(--timing-function);
+  transition: box-shadow var(--timing-function), -webkit-box-shadow var(--timing-function);
 }
 
 .benefits .benefits__list h3 {
@@ -743,6 +807,10 @@ img {
 .steps__item:hover, .steps__item:focus {
   -webkit-box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.2);
           box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.2);
+  -webkit-transition: -webkit-box-shadow var(--timing-function);
+  transition: -webkit-box-shadow var(--timing-function);
+  transition: box-shadow var(--timing-function);
+  transition: box-shadow var(--timing-function), -webkit-box-shadow var(--timing-function);
 }
 .steps__item:last-child {
   margin-bottom: 0;
@@ -1009,6 +1077,10 @@ img {
           box-shadow: 0 8px 30px rgba(212, 20, 67, 0.1);
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+  -webkit-transition: -webkit-transform var(--timing-function);
+  transition: -webkit-transform var(--timing-function);
+  transition: transform var(--timing-function);
+  transition: transform var(--timing-function), -webkit-transform var(--timing-function);
 }
 
 .contacts__title-box {
@@ -1061,6 +1133,8 @@ img {
 }
 .feedback-form button:hover, .feedback-form button:focus {
   background-color: var(--second-accent-cl);
+  -webkit-transition: background-color var(--timing-function);
+  transition: background-color var(--timing-function);
 }
 
 input,
@@ -1219,6 +1293,8 @@ textarea {
 }
 .social-icons__link:hover, .social-icons__link:focus {
   fill: var(--accent-cl);
+  -webkit-transition: fill var(--timing-function);
+  transition: fill var(--timing-function);
 }
 
 .useful__title {
@@ -1250,6 +1326,8 @@ textarea {
 }
 .useful__link:hover, .useful__link:focus {
   color: var(--accent-cl);
+  -webkit-transition: color var(--timing-function);
+  transition: color var(--timing-function);
 }
 
 .useful__icon {
@@ -1271,6 +1349,8 @@ textarea {
 }
 .useful__icon:hover, .useful__icon:focus {
   fill: var(--accent-cl);
+  -webkit-transition: fill var(--timing-function);
+  transition: fill var(--timing-function);
 }
 
 /* 
@@ -1361,6 +1441,8 @@ textarea {
 }
 .subscribe-form__text:hover, .subscribe-form__text:focus {
   background-color: rgba(255, 112, 88, 0.04);
+  -webkit-transition: background-color var(--timing-function);
+  transition: background-color var(--timing-function);
 }
 
 .subscribe-form__btn {
@@ -1377,4 +1459,6 @@ textarea {
 }
 .subscribe-form__btn:hover, .subscribe-form__btn:focus {
   background-color: var(--accent-cl);
+  -webkit-transition: background-color var(--main-animation);
+  transition: background-color var(--main-animation);
 }/*# sourceMappingURL=main.css.map */

@@ -4,55 +4,80 @@
 ============================
 */
 
-// .social-icons__list {
-//   @include display-flex(center, center);
-//   padding-left: 0;
-//   list-style-type: none;
-// }
+//Variables
+// $facebook-blue: #3b5998;
+$instagram-gradient: radial-gradient(
+  circle at 33% 100%,
+  #fed373 4%,
+  #f15245 30%,
+  #d92e7f 62%,
+  #9b36b7 85%,
+  #515ecf
+);
+// $youtube-red: #ff0000;
 
-// .social-icons__item {
-//   margin-right: 10px;
+.social__icons-left-btn {
+  display: flex;
+  flex-direction: column;
+  a {
+    color: #000;
+    text-decoration: none;
+    font-family: roboto condensed;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    transition: 0.4s;
+    align-items: center;
+    position: fixed;
+    width: 125px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgba(200, 200, 200, 0.5);
+  }
+  i {
+    margin-right: 5px;
+  }
+}
 
-//   &:last-child {
-//     margin-right: 0;
+// #facebook-button {
+//   color: #3b5998;
+//   right: -102px;
+//   top: 20px;
+
+//   &:hover {
+//     right: 0;
+
+//     color: #fff;
+//     background-color: #3b5998;
 //   }
-//   &:not(:last-child) {
-//     margin-right: 10px;
-//   }
 // }
+#instagram-left-btn {
+  top: 21px;
+  right: -83px;
+  color: #000;
+  &:hover {
+    color: #fff;
+    background: radial-gradient(
+      circle at 33% 100%,
+      #fed373 4%,
+      #f15245 30%,
+      #d92e7f 62%,
+      #9b36b7 85%,
+      #515ecf
+    );
+    right: 0;
+  }
+}
+// #youtube-button {
+//   top: 120px;
+//   right: -102px;
+//   color: $youtube-red;
+//   &:hover {
+//     right: 0;
 
-// .social-icons__link {
-//   //   @include display-flex(center, center);
-//   width: 44px;
-//   height: 44px;
-// border-radius: 50%;
-//   transition: background-color var(--main-animation);
-//   background-color: var(--main-white-cl);
-
-//   &:hover,
-//   &:focus {
-//     background-color: var(--accent-cl);
-//   }
-// }
-
-// .social-icons__picture--accent {
-//   transition: fill var(--main-animation);
-
-//   .social-icons__link:hover & {
-//     fill: var(--main-white-cl);
-//   }
-// }
-
-// .social-icons__picture {
-//   fill: var(--main-fill-light);
-//   justify-content: center;
-//   align-items: center;
-//   // width: 20px;
-//   // height: 20px;
-//   transition: fill var(--main-animation);
-
-//   &:hover,
-//   &:focus {
-//     fill: var(--main-white-cl);
+//     background-color: $youtube-red;
+//     color: #fff;
 //   }
 // }

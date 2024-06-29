@@ -68,5 +68,6 @@
   &:hover,
   &:focus {
     fill: var(--accent-cl);
+    transition: var(--timing-function);
   }
 }

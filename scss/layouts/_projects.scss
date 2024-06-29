@@ -61,6 +61,7 @@
 
   &:hover {
     box-shadow: var(--main-bcg-shadow);
+    transition: box-shadow var(--timing-function);
   }
 }
 
@@ -88,6 +89,7 @@
   .projects__icon-link:hover &,
   .projects__icon-link:focus & {
     transform: translateY(-100%);
+    transition: transform var(--timing-function);
   }
 }
 

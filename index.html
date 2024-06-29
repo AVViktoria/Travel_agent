@@ -21,7 +21,7 @@
     />
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
     <!-- Swiper Library -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -38,34 +38,24 @@
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__item">
-                <a
-                  class="nav__link nav__link--current link menu__link _active"
-                  href="./index.html#herosection"
+                <a class="nav__link nav__link--current link menu__link _active" href="#herosection"
                   >Hero</a
                 >
               </li>
               <li class="nav__item">
-                <a class="nav__link nav__link link menu__link" href="./index.html#aboutusection"
-                  >About us</a
-                >
+                <a class="nav__link nav__link link menu__link" href="#aboutusection">About us</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link nav__link link menu__link" href="./index.html#benefitssection"
-                  >Benefits</a
-                >
+                <a class="nav__link nav__link link menu__link" href="#benefitssection">Benefits</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link link menu__link" href="./index.html#ourteamsection">Our Team</a>
+                <a class="nav__link link menu__link" href="#ourteamsection">Our Team</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link link menu__link" href="./index.html#howtobecomesection"
-                  >How to Start</a
-                >
+                <a class="nav__link link menu__link" href="#howtobecomesection">How to Start</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link link menu__link" href="./index.html#contactssection"
-                  >Contacts</a
-                >
+                <a class="nav__link link menu__link" href="#contactssection">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -75,7 +65,7 @@
           <button
             class="hero__btn btn hero__btn-accent"
             type="button"
-            onclick="location.href='./index.html#howtobecomesection'"
+            onclick="location.href='#howtobecomesection'"
           >
             Get Started
           </button>
@@ -626,6 +616,17 @@
           </g>
         </svg>
       </a>
+
+      <div class="social__icons-left-btn">
+        <a
+          id="instagram-left-btn"
+          href="https://www.instagram.com/avilova_travel/?locale=id"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Инстаграм иконка"
+          ><i class="fab fa-instagram fa-2x"></i>Instagram</a
+        >
+      </div>
     </main>
 
     <!-- Footer -->
@@ -725,6 +726,7 @@
     </footer>
     <!-- js scripts -->
     <script type="module" src="./js/scroll.js"></script>
+    <script type="module" src="./js/smoothScroll.js"></script>
     <script type="module" src="./js/contactFormData.js"></script>
     <script type="module" src="./js/subscribe.js"></script>
   </body>
