@@ -162,16 +162,30 @@
   //   }
   // }
 }
+
 .useful__icon {
   @include display-flex(center, center);
   width: 16px;
   height: 16px;
   margin-right: 10px;
+  // fill: white;
+  // background-color: var(--accent-cl);
   fill: var(--accent-cl);
+  // transition: background-color var(--accent-cl);
+  // border-radius: 50%;
+  // fill: var(--accent-cl);
+  // background-color: white;
   transition: background-color var(--main-animation);
 
-  // &:hover,
-  // &:focus {
-  //   fill: var(--accent-cl);
-  // }
+  &:hover,
+  &:focus {
+    fill: var(--accent-cl);
+  }
 }
+// .useful__item {
+
+// &:hover,
+//   &:focus {
+//     fill: var(--accent-cl);
+//   }
+// }

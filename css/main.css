@@ -160,7 +160,7 @@ p {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
 }
 
 .link {
@@ -480,9 +480,9 @@ img {
   background-color: var(--second-accent-cl);
 }
 
-.hero__img {
-  width: 530px;
-  height: 530px;
+.hero img {
+  width: 470px;
+  height: 500px;
   border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -693,7 +693,7 @@ img {
 
 .steps__list {
   text-align: center;
-  margin-bottom: 86px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .steps__list {
@@ -1268,6 +1268,9 @@ textarea {
   fill: var(--accent-cl);
   -webkit-transition: background-color var(--main-animation);
   transition: background-color var(--main-animation);
+}
+.useful__icon:hover, .useful__icon:focus {
+  fill: var(--accent-cl);
 }
 
 /* 
