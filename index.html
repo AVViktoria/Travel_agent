@@ -708,14 +708,15 @@
           </ul>
         </div>
 
-        <form class="subscribe-form">
+        <form class="subscribe-form" name="submit-to-subscribe-sheet">
           <h3 class="useful__title">Get in touch</h3>
           <label class="subscribe-form__label">
             <input
               class="subscribe-form__text text"
-              type="text"
-              name="e-mail"
+              type="email"
+              name="subscribe"
               placeholder="E-mail"
+              required
             />
           </label>
           <button class="hero__btn subscribe-form__btn btn" type="submit">Sign up</button>
@@ -725,5 +726,6 @@
     <!-- js scripts -->
     <script type="module" src="./js/scroll.js"></script>
     <script type="module" src="./js/contactFormData.js"></script>
+    <script type="module" src="./js/subscribe.js"></script>
   </body>
 </html>

@@ -11,6 +11,12 @@ form.addEventListener('submit', (e) => {
   const firstNameValue = formElements.firstName.value;
   const lastNameValue = formElements.lastName.value;
   const messageValue = formElements.message.value;
+  const subscribeValue = formElements.subscribe.value;
+
+  if (!subscribeValue) {
+    alert('Please enter a valid email address.');
+    return;
+  }
 
   if (emailValue === '' || messageValue === '' || firstNameValue === '' || lastNameValue === '') {
     alert('Please ensure all input fields are completed. Thank you!');
