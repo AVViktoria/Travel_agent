@@ -503,6 +503,18 @@ img {
   font-size: 20px;
 }
 
+.aboutus__box {
+  padding: 15px 0 35px 0;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.1);
+          box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.1);
+}
+.aboutus__box:hover, .aboutus__box:focus {
+  -webkit-box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.2);
+          box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.2);
+}
+
 .aboutus__title {
   margin-top: 15px;
   margin-bottom: 10px;
