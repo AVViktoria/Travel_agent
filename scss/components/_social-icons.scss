@@ -23,6 +23,7 @@ $instagram-gradient: radial-gradient(
     color: #000;
     text-decoration: none;
     font-family: roboto condensed;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: flex;
@@ -55,7 +56,7 @@ $instagram-gradient: radial-gradient(
 // }
 #instagram-left-btn {
   top: 21px;
-  right: -83px;
+  right: -87px;
   color: #000;
   &:hover {
     color: #fff;

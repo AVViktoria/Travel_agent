@@ -286,6 +286,7 @@ img {
   color: #000;
   text-decoration: none;
   font-family: roboto condensed;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: -webkit-box;
@@ -310,7 +311,7 @@ img {
 
 #instagram-left-btn {
   top: 21px;
-  right: -83px;
+  right: -87px;
   color: #000;
 }
 #instagram-left-btn:hover {
