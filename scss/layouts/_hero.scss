@@ -14,9 +14,14 @@
   padding: 50px 0px;
   color: #120d26;
   letter-spacing: 0.06em;
+  //   width: 100%;
+  // height: 100%;
+  // min-width: 100%;
+  // min-height: 100%;
+  position: relative;
 
   @media screen and (min-width: 1200px) {
-    height: 660px;
+    height: 720px;
   }
 
   // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -51,7 +56,7 @@
 
   // @include mq(desktop) {
   //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //     url(../images/main-page/hero/hero-bcg-img_lg.jpg);
+  //     url(../../images/Picture.png);
 
   //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   //     -webkit-image-set(url(../images/main-page/hero/hero-bcg-img_lg.webp) 1x);
@@ -65,13 +70,27 @@
   //   }
   // }
 }
+.hero::before {
+  background-image: url(../../images/hero-bcg-5.jpg);
+  background-size: cover;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.6;
+}
 .hero__container {
   display: flex;
 }
 .hero__container-box {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  margin-top: 15px;
 }
 
 .hero__title {
@@ -90,6 +109,7 @@
     width: 670px;
   }
 }
+
 // .hero__img-bcg {
 //   width: 449.52px;
 //   z-index: -1;
