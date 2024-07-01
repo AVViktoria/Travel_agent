@@ -14,6 +14,23 @@
     display: none;
   }
 }
+.steps {
+  position: relative;
+}
+.steps::before {
+  background-image: url(../../images/hero-bcg-4.jpg);
+  background-size: cover;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  opacity: 0.4;
+}
+
 .steps__title-box,
 .about__title-box,
 .benefits__title-box,
@@ -57,12 +74,17 @@
   padding: 0px 20px 0px 20px;
   // gap: 28px;
   border-radius: 15px;
-  opacity: 0px;
+  // opacity: 0.5;
   cursor: pointer;
-  box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.1);
+  background-color: #f9f8f8;
+  // box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.1);
+  box-shadow: 0px 10px 40px 0px rgba(200, 200, 200, 0.6);
+
   &:hover,
   &:focus {
-    box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.2);
+    // box-shadow: 0px 10px 40px 0px rgba(241, 102, 24, 0.2);
+    box-shadow: 0px 10px 40px 0px rgba(200, 200, 200, 0.9);
+
     transition: box-shadow var(--timing-function);
   }
 
