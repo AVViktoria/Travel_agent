@@ -85,6 +85,10 @@
 }
 .hero__container {
   display: flex;
+
+  @media screen and (max-width: 1200px) {
+    justify-content: space-around;
+  }
 }
 .hero__container-box {
   display: flex;
@@ -150,6 +154,11 @@
   height: 500px;
   border-radius: 12px;
   object-fit: cover;
+
+  @media screen and (max-width: 1200px) {
+    width: 250px;
+    height: 300px;
+  }
 }
 // .hero__img > img {
 //   display: block;

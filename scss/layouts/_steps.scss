@@ -11,7 +11,7 @@
   padding-top: 0;
 
   @media screen and (max-width: 1139px) {
-    display: none;
+    // display: none;
   }
 }
 .steps {
@@ -43,7 +43,10 @@
   padding-top: 45px;
   padding-bottom: 15px;
   width: auto;
-  margin-bottom: 49px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 49px;
+  }
 }
 .steps__title-box {
   // padding-top: 30px;
@@ -93,7 +96,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 354px;
+    width: 225px;
 
     &:first-child {
       margin-right: 30px;
@@ -129,10 +132,14 @@
   width: 130px;
   height: 130px;
   fill: #8c8d91;
+
+  @media screen and (max-width: 1200px) {
+    width: 90px;
+    height: 110px;
+  }
 }
 
 .steps__text,
-.about__text,
 .gallery__text,
 .benefits__text,
 .contacts__text {
@@ -142,6 +149,12 @@
   line-height: 30px;
 }
 
+.steps__text.accent {
+  font-size: 16px;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
 .steps__title,
 .about__title,
 .benefits__title,
@@ -159,9 +172,14 @@
   justify-content: center;
 
   color: var(--accent-cl-dark);
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 36px;
+  font-size: 22px;
+
+  line-height: 30px;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 36px;
+    font-size: 24px;
+  }
 }
 .steps__text-box {
   display: flex;
@@ -169,7 +187,10 @@
   align-items: center;
 
   font-size: 24px;
-  font-weight: 600;
+
   line-height: 36px;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    font-weight: 600;
+  }
 }

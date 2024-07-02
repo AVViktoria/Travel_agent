@@ -8,10 +8,11 @@
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
+  // margin-right: 20px;
   color: var(--accent-cl);
   font-family: var(--secondary-font);
   font-weight: 700;
-  @include fonts(26px, 0.84);
+  @include fonts(20px, 0.84);
   text-decoration: none;
   &:hover,
   &:focus {
@@ -25,7 +26,13 @@
   &__accent-white {
     color: var(--main-white-cl);
   }
+
   @media screen and (min-width: 768px) {
+    margin-right: 25px;
+    // @include fonts(24px, 0.84);
+  }
+  @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    @include fonts(26px, 0.84);
   }
 }

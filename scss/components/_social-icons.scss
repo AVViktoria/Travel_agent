@@ -6,15 +6,16 @@
 
 //Variables
 // $facebook-blue: #3b5998;
-$instagram-gradient: radial-gradient(
-  circle at 33% 100%,
-  #fed373 4%,
-  #f15245 30%,
-  #d92e7f 62%,
-  #9b36b7 85%,
-  #515ecf
-);
 // $youtube-red: #ff0000;
+
+// $instagram-gradient: radial-gradient(
+//   circle at 33% 100%,
+//   #fed373 4%,
+//   #f15245 30%,
+//   #d92e7f 62%,
+//   #9b36b7 85%,
+//   #515ecf
+// );
 
 .social__icons-left-btn {
   display: flex;
@@ -42,20 +43,8 @@ $instagram-gradient: radial-gradient(
   }
 }
 
-// #facebook-button {
-//   color: #3b5998;
-//   right: -102px;
-//   top: 20px;
-
-//   &:hover {
-//     right: 0;
-
-//     color: #fff;
-//     background-color: #3b5998;
-//   }
-// }
 #instagram-left-btn {
-  top: 21px;
+  top: 77px;
   right: -87px;
   color: #000;
   &:hover {
@@ -70,7 +59,32 @@ $instagram-gradient: radial-gradient(
     );
     right: 0;
   }
+
+  @media screen and (min-width: 768px) {
+    top: 88px;
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   top: 88px;
+  // }
+
+  @media screen and (min-width: 1450px) {
+    top: 21px;
+  }
 }
+
+// #facebook-button {
+//   color: #3b5998;
+//   right: -102px;
+//   top: 20px;
+
+//   &:hover {
+//     right: 0;
+
+//     color: #fff;
+//     background-color: #3b5998;
+//   }
+// }
 // #youtube-button {
 //   top: 120px;
 //   right: -102px;

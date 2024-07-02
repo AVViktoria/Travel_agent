@@ -20,7 +20,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: space-around;
+    // justify-content: space-around;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: 1200px) {
@@ -28,6 +29,10 @@
     flex-wrap: nowrap;
     justify-content: center;
   }
+
+  // @media screen and (max-width: 1200px) and (min-width: 480px) {
+
+  // }
 }
 /*
 ============================
@@ -39,14 +44,16 @@
   text-align: center;
   margin-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: 165px;
+  @media screen and (max-width: 1200px) {
+    padding-left: 15px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
     margin-bottom: 0;
     text-align: left;
+    margin-left: auto;
+    // margin-right: 165px;
   }
 }
 
@@ -111,7 +118,11 @@
 }
 
 // Sign up
-
+.useful__box {
+  @media screen and (max-width: 1200px) {
+    padding-right: 15px;
+  }
+}
 .useful__title {
   color: white;
   font-size: 24px;
