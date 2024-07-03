@@ -334,7 +334,7 @@ img {
 }
 
 #instagram-left-btn {
-  top: 77px;
+  top: 70px;
   right: -87px;
   color: #000;
 }
@@ -345,7 +345,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   #instagram-left-btn {
-    top: 88px;
+    top: 84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #instagram-left-btn {
+    top: 86px;
   }
 }
 @media screen and (min-width: 1450px) {
@@ -591,7 +596,7 @@ img {
   line-height: 30px;
   text-align: left;
   margin-bottom: 58px;
-  color: var(--title-txt-cl);
+  color: #626674;
 }
 @media screen and (max-width: 768px) {
   .hero__paragraph {
