@@ -74,7 +74,9 @@
   // }
 }
 .hero::before {
+  // background: url(../../images/hero-bcg-2.jpg) no-repeat center center;
   background: url(../../images/hero-bcg-2.jpg) no-repeat center center;
+
   background-size: cover;
 
   content: '';
