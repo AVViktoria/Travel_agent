@@ -521,9 +521,6 @@ img {
   color: #120d26;
   letter-spacing: 0.06em;
   position: relative;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(162, 162, 165, 0.2)), to(rgba(47, 48, 58, 0.2))), url("../../images/hero-bcg-2.jpg") no-repeat center center;
-  background: linear-gradient(to right, rgba(162, 162, 165, 0.2), rgba(47, 48, 58, 0.2)), url("../../images/hero-bcg-2.jpg") no-repeat center center;
-  background-size: cover;
 }
 @media screen and (min-width: 1200px) {
   .hero {
