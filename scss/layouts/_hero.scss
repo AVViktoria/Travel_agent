@@ -96,11 +96,12 @@
   justify-content: flex-start;
   flex-direction: column;
   margin-top: 15px;
+  margin-right: 10px;
 }
 
 .hero__title {
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   margin-bottom: 33px;
   @include fonts(24px, 1.62);
   font-weight: 900;
