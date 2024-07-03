@@ -7,7 +7,8 @@
 .subscribe-form {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
+  margin: 0;
   @media screen and (max-width: 768px) {
     padding-right: 15px;
     padding-left: 15px;
@@ -43,12 +44,12 @@
 }
 
 .subscribe-form__text {
+  @media screen and (min-width: 480px) {
+    width: 270px;
+  }
   @media screen and (min-width: 768px) {
     width: 358px;
   }
-  // @media screen and (min-width: 1200px) {
-  //   width: 358px;
-  // }
   width: 100%;
   padding: 15px 15px 15px 16px;
   height: 50px;
@@ -74,6 +75,12 @@
   padding: 10px 52px;
 
   background-color: var(--title-txt-cl);
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
+  @media screen and (max-width: 1200px) {
+    margin-right: 0;
+  }
 
   @media screen and (min-width: 1200px) {
     margin: 0;

@@ -4,6 +4,7 @@
 ============================
 */
 
+///________________сделать hero  на 390px and less
 .hero {
   width: 100%;
   max-width: 1600px;
@@ -130,8 +131,12 @@
   font-size: 20px;
   line-height: 30px;
   text-align: left;
-  color: var(--title-txt-cl);
   margin-bottom: 58px;
+  color: var(--title-txt-cl);
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 24px;
+  }
 }
 .hero__btn {
   margin-right: auto;
