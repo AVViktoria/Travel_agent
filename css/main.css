@@ -529,9 +529,10 @@ img {
 }
 
 .hero::before {
-  background: url("../../images/hero-bcg-2.jpg") no-repeat center center !important;
+  background: url("../../images/hero-bcg-2.jpg") no-repeat center center;
   background-size: cover;
   background-color: rgba(200, 200, 200, 0.2);
+  overflow: hidden;
   content: "";
   display: block;
   position: absolute;
