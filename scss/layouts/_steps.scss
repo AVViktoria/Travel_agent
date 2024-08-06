@@ -18,7 +18,7 @@
   position: relative;
 }
 .steps::before {
-  background-image: url('../../assets/hero-bcg-2.jpg');
+  background: url('../../assets/hero-bcg-2.jpg');
   background-size: cover;
   content: '';
   display: block;
