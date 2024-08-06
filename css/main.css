@@ -593,6 +593,7 @@ img {
 
 .hero__paragraph.accent {
   margin-bottom: 0;
+  margin-top: 45px;
 }
 @media screen and (max-width: 1200px) {
   .hero__paragraph.accent {
@@ -602,7 +603,6 @@ img {
 
 .hero__btn {
   margin-right: auto;
-  margin-bottom: 45px;
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--second-accent-cl);
