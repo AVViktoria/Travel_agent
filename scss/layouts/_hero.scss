@@ -152,8 +152,15 @@
     margin-bottom: 24px;
   }
 }
+.hero__paragraph.accent {
+  margin-bottom: 0;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
 .hero__btn {
   margin-right: auto;
+  margin-bottom: 45px;
 
   &:hover,
   &:focus {
